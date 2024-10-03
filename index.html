@@ -43,8 +43,11 @@
   .mt-32 {
     margin-top: 32px;
   }
-  .h-200{
-    height: 200px;
+  .h-132{
+    height: 132px;
+  }
+  .h-51{
+    height: 51px;
   }
 </style>
 <body>
@@ -59,29 +62,29 @@
         <div class="row mb-24 mt-32">
           <div class="col-md-6">
             <label for="firstname" class="form-label">First Name <span class="text-danger">*</span> </label>
-            <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+            <input type="text" class="form-control h-51" id="firstname" required>
           </div>
           <div class="col-md-6">
             <label for="lastname" class="form-label">Last Name <span class="text-danger">*</span> </label>
-            <input type="text" class="form-control" id="lastname" placeholder="last Name" required>
+            <input type="text" class="form-control h-51" id="lastname" required>
           </div>
         </div>
         <div class="row mb-24">
           <div class="col">
             <label for="emailaddr" class="form-label">Email Address <span class="text-danger">*</span></label>
-            <input type="email" class="form-control" id="emailaddr" placeholder="your email address" required>
+            <input type="email" class="form-control h-51" id="emailaddr" required>
           </div>
         </div>
         <div class="mb-24">
           <label class="form-label">Query Type <span class="text-danger">*</span></label>
           <div class="row ">
             <div class="col-md-6 btn-group" role="group" aria-label="Query Type">
-              <input type="radio" class="btn-check form-control" name="queryType" id="generalEnquiry" autocomplete="off">
+              <input type="radio" class="btn-check form-control h-51" name="queryType" id="generalEnquiry" autocomplete="off">
               <label class="btn btn-outline-secondary" for="generalEnquiry">General Enquiry</label>
             </div>
             
             <div class="col-md-6 btn-group" role="group" aria-label="Query Type">
-              <input type="radio" class="btn-check form-control" name="queryType" id="supportRequest" autocomplete="off">
+              <input type="radio" class="btn-check form-control h-51" name="queryType" id="supportRequest" autocomplete="off">
               <label class="btn btn-outline-secondary" for="supportRequest">Support Request</label>
             </div>
           </div>
@@ -89,7 +92,7 @@
         <div class="row mb-40">
           <div class="col">
             <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-            <textarea name="message" id="message" class="form-control h-200" required></textarea>
+            <textarea name="message" id="message" class="form-control h-132" required></textarea>
           </div>
         </div>
         <div class="row mb-40">
