@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'karla';  /* Name your font */
+    src: url('Karla-VariableFont_wght.ttf') format('truetype'); /* Path to the .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Optionally, set the default font for the entire body */
+body {
+    font-family: 'karla', sans-serif; 
+}

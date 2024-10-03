@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<style>
+  
+:root {
+    --Green200: #E0F1E8;
+    --Green600: #0C7D69;
+    --White :#FFFFFF;
+    --Grey500 : #86A2A5;
+    --Grey900 : #2A4144;
+    --RedError: #D73C3C;
+  }
+
+  .bg-Green200 {
+    background-color: var(--Green200) !important;
+  }
+
+  .bg-White {
+    background-color: var(--White) !important;
+  }
+
+  .p-40  {
+    padding : 40px;
+  }
+  .rounded-16 {
+    border-radius: 16px !important;
+  }
+
+  .mb-24 {
+    margin-bottom: 24px !important;
+  }
+  .mb-40 {
+    margin-bottom: 40px !important;
+  }
+  .mt-32 {
+    margin-top: 32px;
+  }
+</style>
+<body>
+  <main class="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-Green200 ">
+    <article class="w-100 bg-White p-40 rounded-16" style="max-width: 736px;">
+      <form id="myForm">
+        <!-- Success Message (Hidden Initially) -->
+        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+          Thanks for completing the form. We’ll be in touch soon!
+        </div>
+        <h1>Contact Us</h1>
+        <div class="row mb-24 mt-32">
+          <div class="col-md-6">
+            <label for="firstname" class="form-label">First Name <span class="text-danger">*</span> </label>
+            <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastname" class="form-label">Last Name <span class="text-danger">*</span> </label>
+            <input type="text" class="form-control" id="lastname" placeholder="last Name" required>
+          </div>
+        </div>
+        <div class="row mb-24">
+          <div class="col">
+            <label for="emailaddr" class="form-label">Email Address <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="emailaddr" placeholder="your email address" required>
+          </div>
+        </div>
+        <div class="mb-24">
+          <label class="form-label">Query Type <span class="text-danger">*</span></label>
+          <div class="row ">
+            <div class="col-md-6 btn-group" role="group" aria-label="Query Type">
+              <input type="radio" class="btn-check form-control" name="queryType" id="generalEnquiry" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="generalEnquiry">General Enquiry</label>
+            </div>
+            
+            <div class="col-md-6 btn-group" role="group" aria-label="Query Type">
+              <input type="radio" class="btn-check form-control" name="queryType" id="supportRequest" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="supportRequest">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-40">
+          <div class="col">
+            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+            <textarea name="message" id="message" class="form-control" required></textarea>
+          </div>
+        </div>
+        <div class="row mb-40">
+          <div class="col">
+            <input type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              I Consent to being contact by the team
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <input class="btn btn-success form-control" type="submit" value="Submit">
+          <!-- <button type="submit" class="btn btn-primary form-control btn-success">Sign in</button> -->
+        </div>
+      </form>
+
+    </article>
+  </main>
+  <script>
+    // Handle form submission
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+
+      // Show the success message
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
