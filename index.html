@@ -43,6 +43,9 @@
   .mt-32 {
     margin-top: 32px;
   }
+  .h-200{
+    height: 200px;
+  }
 </style>
 <body>
   <main class="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-Green200 ">
@@ -86,7 +89,7 @@
         <div class="row mb-40">
           <div class="col">
             <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-            <textarea name="message" id="message" class="form-control" required></textarea>
+            <textarea name="message" id="message" class="form-control h-200" required></textarea>
           </div>
         </div>
         <div class="row mb-40">
@@ -99,7 +102,6 @@
         </div>
         <div class="col-12">
           <input class="btn btn-success form-control" type="submit" value="Submit">
-          <!-- <button type="submit" class="btn btn-primary form-control btn-success">Sign in</button> -->
         </div>
       </form>
 
